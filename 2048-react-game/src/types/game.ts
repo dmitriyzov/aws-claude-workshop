@@ -9,3 +9,9 @@ export interface GameState {
 }
 
 export type Direction = 'up' | 'down' | 'left' | 'right';
+
+export interface LeaderboardEntry {
+  id: string;
+  score: number;
+  date: string;
+}

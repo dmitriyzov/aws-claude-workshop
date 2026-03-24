@@ -263,6 +263,149 @@ body {
   font-size: 14px;
 }
 
+/* Leaderboard button */
+.leaderboard-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.leaderboard-button {
+  background: #8f7a66;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 30px;
+  color: #f9f6f2;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.leaderboard-button:hover {
+  background: #9f8a76;
+}
+
+/* Leaderboard popup */
+.leaderboard-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.15s;
+}
+
+.leaderboard-popup {
+  background: #faf8ef;
+  border-radius: 6px;
+  padding: 24px;
+  width: 360px;
+  max-width: calc(100vw - 40px);
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.leaderboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.leaderboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #776e65;
+  margin: 0;
+}
+
+.leaderboard-close-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #776e65;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+  transition: color 0.15s;
+}
+
+.leaderboard-close-button:hover {
+  color: #3c3a32;
+}
+
+.leaderboard-empty {
+  color: #776e65;
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.leaderboard-list {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leaderboard-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #bbada0;
+  border-radius: 3px;
+  color: #f9f6f2;
+}
+
+.leaderboard-entry--first {
+  background: #edcf72;
+  color: #776e65;
+}
+
+.leaderboard-rank {
+  font-size: 13px;
+  font-weight: bold;
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.leaderboard-score {
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.leaderboard-date {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.leaderboard-clear-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 2px solid #bbada0;
+  border-radius: 3px;
+  color: #776e65;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.leaderboard-clear-button:hover {
+  background: #bbada0;
+  color: #f9f6f2;
+}
+
 @media (max-width: 600px) {
   .game-container {
     padding: 10px;
