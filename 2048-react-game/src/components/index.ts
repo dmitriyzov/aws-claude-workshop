@@ -1,5 +1,4 @@
 export { Board } from './Board';
 export { Game } from './Game';
-export { LeaderboardPopup } from './LeaderboardPopup';
-export type { LeaderboardPopupProps } from './LeaderboardPopup';
+export { ScoreHistorySidebar } from './ScoreHistorySidebar';
 export { Tile } from './Tile';
